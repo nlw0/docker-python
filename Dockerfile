@@ -343,6 +343,9 @@ RUN pip install --upgrade mpld3 && \
     pip install annoy && \
     pip install category_encoders && \
     pip install google-cloud-bigquery && \
+    # Tensor Train
+    apt-get install -y gfortran && \
+    pip install ttpy && \
     ##### ^^^^ Add new contributions above here
     # clean up pip cache
     rm -rf /root/.cache/pip/* && \
